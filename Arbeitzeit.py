@@ -17,7 +17,7 @@ def startup():
     print(f"Die Zeit wird auf {accuracy} Minuten genau erfasst.")
     open("arbeitszeit.temp", "w").close()
     return accuracy
-        
+
 
 def begin_working(accuracy):
     activity_time = localtime(time())
@@ -56,4 +56,3 @@ def user_input(accuracy):
 accuracy = startup()
 begin_working(accuracy)
 user_input(accuracy)
-
